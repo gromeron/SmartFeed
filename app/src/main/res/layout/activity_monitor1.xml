@@ -1,175 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:padding="8dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/titulo_monitor_1"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MONITOR"
-        android:textAlignment="center"
-        android:textAppearance="@style/SmartFeedTitle"
-        android:layout_marginTop="38dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:padding="8dp">
 
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_monitor_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardBackgroundColor="#E3EAF8"
-        app:cardCornerRadius="10dp">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/titulo_monitor_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="MONITOR"
+            android:textAlignment="center"
+            android:textAppearance="@style/SmartFeedTitle"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
-            <!-- Franja superior con título y subtítulo -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_monitor_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#E3EAF8"
+            app:cardCornerRadius="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/monogram"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginEnd="8dp"/>
-
+                <!-- Franja superior con título y subtítulo -->
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
 
-                    <TextView
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Alimentador 1"
-                        android:textColor="@android:color/black"
-                        android:fontFamily="@font/raleway_medium"
-                        android:textSize="18sp"/>
+                        android:src="@drawable/monogram"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"/>
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Activo"
-                        android:textColor="@color/dark_purple"
-                        android:fontFamily="@font/raleway_semibold"
-                        android:textSize="14sp"/>
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alimentador 1"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/raleway_medium"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Activo"
+                            android:textColor="@color/dark_purple"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
-            </LinearLayout>
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    app:srcCompat="@drawable/imagen_grande_1"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/content_description_media"
+                    />
 
-            <!-- Media -->
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="194dp"
-                app:srcCompat="@drawable/imagen_grande_1"
-                android:scaleType="centerCrop"
-                android:contentDescription="@string/content_description_media"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/monitor_1_titulo"
-                    android:textAppearance="?attr/textAppearanceTitleMedium"
-                    android:fontFamily="@font/raleway_medium"
-                    android:textSize="16dp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/monitor_1_titulo"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/monitor_1_subtitulo"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/monitor_1_texto"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textSize="14dp"
+                        />
+
+                </LinearLayout>
+
+                <!-- Franja con botones -->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/monitor_1_subtitulo"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:fontFamily="@font/raleway_medium"
-                    android:textSize="14dp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/monitor_1_texto"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:fontFamily="@font/raleway_medium"
-                    android:textSize="14dp"
-                    />
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="24dp"
+                    android:paddingBottom="24dp">
 
+                    <!-- Botón Cancelar -->
+                    <Button
+                        android:id="@+id/btn_cancelar"
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:text="Cancelar"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/raleway_bold"
+                        android:backgroundTint="#FC5F60"
+                        android:gravity="center"
+                        app:cornerRadius="6dp"
+                        app:strokeColor="@color/black"
+                        app:strokeWidth="1dp"
+                        android:onClick="goToDashboardActivity"
+                        android:layout_marginEnd="16dp"
+                        />
+
+                    <!-- Botón Configurar -->
+                    <Button
+                        android:id="@+id/btn_configurar"
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:text="Configurar"
+                        android:textSize="13sp"
+                        android:textColor="@color/dark_purple"
+                        android:fontFamily="@font/raleway_bold"
+                        android:backgroundTint="#FDCE71"
+                        android:gravity="center"
+                        app:cornerRadius="6dp"
+                        app:strokeColor="@color/black"
+                        app:strokeWidth="1dp"
+                        android:onClick="goToAlimentadorRegisterActivity"
+                        />
+
+                </LinearLayout>
             </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-            <!-- Franja con botones -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="end"
-                android:paddingTop="24dp"
-                android:paddingEnd="24dp"
-                android:paddingBottom="24dp">
-
-                <!-- Botón Cancelar -->
-                <Button
-                    android:id="@+id/btn_cancelar"
-                    android:layout_width="130dp"
-                    android:layout_height="48dp"
-                    android:text="Cancelar"
-                    android:textSize="13sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/raleway_bold"
-                    android:backgroundTint="#FC5F60"
-                    android:gravity="center"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="@color/black"
-                    app:strokeWidth="1dp"
-                    android:onClick="goToDashboardActivity"
-                    android:layout_marginEnd="16dp"
-                    />
-
-                <!-- Botón Configurar -->
-                <Button
-                    android:id="@+id/btn_configurar"
-                    android:layout_width="130dp"
-                    android:layout_height="48dp"
-                    android:text="Configurar"
-                    android:textSize="13sp"
-                    android:textColor="@color/dark_purple"
-                    android:fontFamily="@font/raleway_bold"
-                    android:backgroundTint="#FDCE71"
-                    android:gravity="center"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="@color/black"
-                    app:strokeWidth="1dp"
-                    android:onClick="goToAlimentadorRegisterActivity"
-                    />
-
-            </LinearLayout>
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
