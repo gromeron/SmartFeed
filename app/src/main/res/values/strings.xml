@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SmartFeedMobile</string>
+    <string name="smart_feed_titulo">SMART FEED</string>
+    <string name="boton_entrar">ENTRAR</string>
+    <string name="boton_enviar">ENVIAR</string>
+    <string name="titulo_login">INICIO DE SESIÓN</string>
+    <string name="usuario_label">Usuario</string>
+    <string name="usuario_placeholder">Ingrese usuario o correo</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="password_label">Password</string>
+    <string name="password_placeholder">Strong password</string>
+    <string name="olvido_contrasena">Olvidó su contraseña o usuario?</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="registro_usuario">REGISTRO DE USUARIO</string>
+    <string name="registro_usuario_texto">Regístrese para crear una cuenta y disfrutar de todos los servicios que le ofrece la aplicación Smart Feed</string>
+    <string name="recibir_notificaciones">¿Desea recibir notificaciones?</string>
+    <string name="tipo_notificacion">Tipo de notificación:</string>
+    <string name="acepto_terminos">Acepto términos y condiciones</string>
+    <string name="bienvenido_titulo">BIENVENIDO!</string>
+    <string name="bienvenido_texto">Su registro se ha realizado satisfactoriamente.</string>
+    <string name="boton_continuar">CONTINUAR</string>
+    <string name="registro_productos_titulo">REGISTRO DE MASCOTAS Y PRODUCTOS</string>
+    <string name="registro_mascota">REGISTRO DE MASCOTA</string>
+    <string name="registro_mascota_text">Registre su mascota con los datos necesarios para poder brindarle nuestro mejor servicio.</string>
+    <string name="registro_alimentador">REGISTRO DE ALIMENTADOR</string>
+    <string name="registro_alimentador_text">Registre su alimentador con las características principales para que podamos configurar las mejores opciones para sus mascotas.</string>
+    <string name="seleccionar_modelo">Seleccione el modelo</string>
+    <string name="dispensador_agua_text">¿Desea utilizar el dispensador de agua?</string>
+    <string name="monitor_1_titulo">Hades</string>
+    <string name="monitor_1_subtitulo">Canino</string>
+    <string name="monitor_1_texto">Alimentador para la mascota Hades, con alimento alto en proteinas.</string>
+    <string name="monitor_2_titulo">Agata</string>
+    <string name="monitor_2_subtitulo">Felino</string>
+    <string name="monitor_2_texto">Alimentador para la mascota Agata, con alimento bajo en carbohidatos.</string>
+    <string name="monitor_3_titulo">Ramón</string>
+    <string name="monitor_3_subtitulo">Felino</string>
+    <string name="monitor_3_texto">Alimentador para la mascota Ramón, con alimento bajo en carbohidratos.</string>
+    <string name="content_description_media">Contenido de multimedia.</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="opciones">
+        <item>Opción 1</item>
+        <item>Opción 2</item>
+        <item>Opción 3</item>
+    </string-array>
+</resources>

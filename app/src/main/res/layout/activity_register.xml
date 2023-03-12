@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titulo_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registro_usuario"
+            android:textAlignment="center"
+            android:textAppearance="@style/SmartFeedTitle"
+            android:layout_marginTop="61dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registro_usuario_texto"
+            android:fontFamily="@font/raleway_regular"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombresTextField"
+            android:layout_width="280dp"
+            android:layout_marginLeft="58dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su nombre"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/apellidosTextField"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:hint="Apellidos"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese sus apellidos"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/direccionTextField"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:hint="Dirección"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lugar de residencia"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/telefonoTextField"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:hint="Telefono"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de contacto principal"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/correoTextField"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:hint="Correo"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo principal"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fechaNacimimentoTextField"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:hint="Fecha de nacimiento"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="08 / 06 / 1995"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:thumbTint="@color/white"
+            app:trackTint="@color/dark_purple"
+            android:text="@string/recibir_notificaciones"
+            android:fontFamily="@font/raleway_regular"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"
+            android:textAlignment="center"
+            android:layout_marginRight="66dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tipo_notificacion"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/raleway_regular"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SMS"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/raleway_regular"
+                android:textSize="14sp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/raleway_regular"
+                android:textSize="14sp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notificaciones push"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/raleway_regular"
+                android:textSize="14sp"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="42dp">
+
+            <CheckBox
+                android:id="@+id/register_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acepto_terminos"
+                android:layout_toEndOf="@+id/register_checkbox"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/raleway_bold"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_enviar_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="56dp"
+            android:backgroundTint="@color/dark_yellow"
+            android:fontFamily="@font/raleway_bold"
+            android:text="@string/boton_enviar"
+            android:textColor="@color/dark_purple"
+            android:textSize="32sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:onClick="goToWelcomeActivity"/>
+
+    </LinearLayout>
+
+</ScrollView>
