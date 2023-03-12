@@ -10,3 +10,13 @@ Se recomienda ejecutar el apk suministrado en el release de este repositorio en 
 
 ## Imagenes de la aplicación
 A continuación unas imágenes de la aplicación en ejecución.
+
+![Screenshot from 2023-03-11 22-44-32](https://user-images.githubusercontent.com/98790008/224524172-2713fbec-0d6b-4c6a-baee-f397a9099125.png)
+
+![Screenshot from 2023-03-11 22-44-41](https://user-images.githubusercontent.com/98790008/224524183-94a4c838-5695-402b-b9fd-250c2e7168b2.png)
+
+![Screenshot from 2023-03-11 22-44-48](https://user-images.githubusercontent.com/98790008/224524189-57e4bb48-c7d4-4434-a699-377509dc6f48.png)
+
+![Screenshot from 2023-03-11 22-44-54](https://user-images.githubusercontent.com/98790008/224524197-d0104b62-474a-4126-92ea-4d5961b3ca33.png)
+
+![Screenshot from 2023-03-11 22-45-26](https://user-images.githubusercontent.com/98790008/224524206-91e03786-fe44-47d6-b714-d8abf33eeb07.png)
